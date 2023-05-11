@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boostrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/abac3c305c.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+              <img class="instagram-logo ms-auto"src="https://www.unipile.com/wp-content/uploads/2022/09/Logo-Instagram-noir-1.png"><img class="instagram-text ms-auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1024px-Instagram_logo.svg.png">
+          </a>
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-success ms-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Create a new post
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header mb-1">
+        <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Caption:<br>
+        <textarea class="mt-2"placeholder="Add the caption of your text here" rows="4" cols="60"></textarea>
+        <button class="border border-1 rounded border-light" type="button"><i class="fa-solid fa-camera"></i></button>
+        <button class="border border-1 rounded border-light" type="button"><i class="fa-solid fa-location-dot"></i></button>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Publish</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIN Modal -->
+
+<!-- DROPDOWN -->
+          <div class="dropdown ms-2">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-gear"></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                <li><hr></li>
+                <li><a class="dropdown-item" id="logout"href="#">Log out</a></li>
+              </ul>
+            </div>
+        </div>
+      </nav>
+    
+
+    <!-- FIN NAVIGATION BAR -->
+
+    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active bg-transparent" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-sharp fa-solid fa-table-cells"></i></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link bg-transparent" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+      </li>
+  </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <!-- GRILLA DE IMAGENES 3x3 -->
+          <div class="container flex justify-content-center">
+
+              <!-- PRIMER ROW -->
+              <div class="row " >
+                <div class="col-4" >
+                  <img class="foto img-fluid" src="https://hips.hearstapps.com/hmg-prod/images/do-dogs-smile-1576250232.jpg?crop=0.648xw:1.00xh;0.243xw,0&resize=1200:*">
+                </div>
+                <div class="col-4">
+                  <img class="foto img-fluid" src="https://img.freepik.com/premium-photo/group-happy-young-students-university_85574-4531.jpg?w=2000" >
+                </div>
+                <div class="col-4">
+                  <img class="foto img-fluid" src="https://static.toiimg.com/thumb/85096042.cms?resizemode=4&width=400">
+                </div>
+              </div>
+              <!-- SEGUNDO ROW -->
+              <div class="row mt-4  vh-50" >
+                  <div class="col-4" >
+                    <img class="foto img-fluid" src="https://media.istockphoto.com/id/1271198248/photo/portrait-of-happy-woman-in-the-park.jpg?s=612x612&w=0&k=20&c=BF2jUYP_nlizn3jJ4HQs73VhHYRW67GFMwxjQcAPAi0=">
+                  </div>
+                  <div class="col-4">
+                    <img class="foto img-fluid " src="https://img1.goodfon.com/wallpaper/nbig/d/6b/paris-parizh-france-franciya-la-434.jpg" class="img-thumbnail img-responsive" class="img-thumbnail img-responsive">
+                  </div>
+                  <div class="col-4">
+                    <img class="foto img-fluid" src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt9cda1fda69692739/60dcd17e454f930f33f972a8/ddfdb05c9ff5c5f4a416f93e413b2402fb22d97d.jpg" class="img-thumbnail img-responsive" class="img-thumbnail img-responsive">
+                  </div>
+                </div>
+          
+                <!-- tercer ROW -->
+              <div class="row mt-4 " >
+                  <div class="col-4"  >
+                    <img class="foto img-fluid" src="https://media.istockphoto.com/id/1181876192/photo/happy-family-have-fun-in-the-park-stock-photo.jpg?s=612x612&w=0&k=20&c=vO2g_Uz1kG5YhzcFS5_YGkC_B8jqf1hI_sx8xjGkwQg=">
+                  </div>
+                  <div class="col-4">
+                    <img class="foto img-fluid" src="https://imageio.forbes.com/specials-images/imageserve/5f302109ffad89f9130e07db/Programming-source-code-abstract-background/0x0.jpg?format=jpg&crop=4800,2700,x0,y243,safe&width=960" class="img-thumbnail img-responsive" class="img-thumbnail img-responsive">
+                  </div>
+                  <div class="col-4">
+                    <img class="foto img-fluid" src="https://www.ppic.org/wp-content/uploads/WhiteandLatinaCollegeStudents.jpg" class="img-thumbnail img-responsive" class="img-thumbnail img-responsive">
+                  </div>
+                </div>
+
+            </div>
+
+      </div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <div class="container-fluid flex">
+              <!-- PRIMER CARD -->
+                  <div class="row justify-content-center">
+                      <div class="card">
+                          <div class="card-title">
+                              <p class="card-title-text">My Crazy dog Spark</p>
+                              <p class="card-title-number">06/26</p>
+                          </div>
+                          <img src="https://hips.hearstapps.com/hmg-prod/images/do-dogs-smile-1576250232.jpg?crop=0.648xw:1.00xh;0.243xw,0&resize=1200:*">
+                         <div class="card-body">
+                            <h6 class="card-likes">205 likes</h6>
+                            <p class="card-text">This is and example of a very good photo you can post on instagram</p>
+                          
+                          </div>
+                      </div>
+          
+          
+                  </div>
+          
+                  <!-- segundo CARD -->
+                  <div class="row justify-content-center">
+                      <div class="card">
+                          <div class="card-title">
+                              <p class="card-title-text">Students regreting decissions</p>
+                              <p class="card-title-number">04/19</p>
+                          </div>
+                          <img class="foto2"src="https://img.freepik.com/premium-photo/group-happy-young-students-university_85574-4531.jpg?w=2000">
+                         <div class="card-body">
+                            <h6 class="card-likes">22 likes</h6>
+                            <p class="card-text">This is and example of a very good photo you can post on instagram</p>
+                          
+                          </div>
+                      </div>
+                  
+                  </div>
+          
+                   <!-- Tercer CARD -->
+                   <div class="row justify-content-center">
+                      <div class="card">
+                          <div class="card-title">
+                              <p class="card-title-text">The greatness of Croatia</p>
+                              <p class="card-title-number">04/19</p>
+                          </div>
+                          <img class="foto2"src="https://static.toiimg.com/thumb/85096042.cms?resizemode=4&width=400">
+                         <div class="card-body">
+                            <h6 class="card-likes">205 likes</h6>
+                            <p class="card-text">This is and example of a very good photo you can post on instagram</p>
+                          
+                          </div>
+                      </div>
+                  
+                  </div>
+                  
+                  <!-- Cuarto CARD -->
+                  <div class="row justify-content-center">
+                      <div class="card">
+                          <div class="card-title">
+                              <p class="card-title-text">LMAO stock</p>
+                              <p class="card-title-number">07/18</p>
+                          </div>
+                          <img class="foto2"src="https://media.istockphoto.com/id/1271198248/photo/portrait-of-happy-woman-in-the-park.jpg?s=612x612&w=0&k=20&c=BF2jUYP_nlizn3jJ4HQs73VhHYRW67GFMwxjQcAPAi0=">
+                         <div class="card-body">
+                            <h6 class="card-likes">2052 likes</h6>
+                            <p class="card-text">This is and example of a very good photo you can post on instagram</p>
+                          
+                          </div>
+                      </div>
+                  
+                  </div>
+          
+                   <!-- quinto CARD -->
+                   <div class="row justify-content-center">
+                      <div class="card">
+                          <div class="card-title">
+                              <p class="card-title-text">Tour Eiffel</p>
+                              <p class="card-title-number">12/12</p>
+                          </div>
+                          <img class="foto2"src="https://img1.goodfon.com/wallpaper/nbig/d/6b/paris-parizh-france-franciya-la-434.jpg" class="img-thumbnail img-responsive">
+                         <div class="card-body">
+                            <h6 class="card-likes">100.000+ likes</h6>
+                            <p class="card-text">This is and example of a very good photo you can post on instagram</p>
+                          
+                          </div>
+                      </div>
+                  
+                        <!-- sexto CARD -->
+                   <div class="row justify-content-center">
+                      <div class="card">
+                          <div class="card-title">
+                              <p class="card-title-text">SIUUUUU </p>
+                              <p class="card-title-number">03/22</p>
+                          </div>
+                          <img class="foto2"src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt9cda1fda69692739/60dcd17e454f930f33f972a8/ddfdb05c9ff5c5f4a416f93e413b2402fb22d97d.jpg">
+                         <div class="card-body">
+                            <h6 class="card-likes">1 like</h6>
+                            <p class="card-text">This is and example of a very good photo you can post on instagram</p>
+                          
+                          </div>
+                      </div>
+          
+                           <!-- septimo CARD -->
+                   <div class="row justify-content-center">
+                      <div class="card">
+                          <div class="card-title">
+                              <p class="card-title-text">Not their child </p>
+                              <p class="card-title-number">01/28</p>
+                          </div>
+                          <img class="foto2"src="https://media.istockphoto.com/id/1181876192/photo/happy-family-have-fun-in-the-park-stock-photo.jpg?s=612x612&w=0&k=20&c=vO2g_Uz1kG5YhzcFS5_YGkC_B8jqf1hI_sx8xjGkwQg=">
+                         <div class="card-body">
+                            <h6 class="card-likes">12 likes</h6>
+                            <p class="card-text">This is and example of a very good photo you can post on instagram</p>
+                          
+                          </div>
+          
+                          
+                  </div>
+            </div>
+      </div>
+     </div>
+
+
+    <!-- FIN SELECTOR DE VISTA -->
+
+    <!-- Javascript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

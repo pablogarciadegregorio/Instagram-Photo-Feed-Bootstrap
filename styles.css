@@ -16,6 +16,10 @@
 #logout{
     color:red;
 }
+.fa-camera, .fa-location-dot  {
+    height:15px;
+    width: 15px;
+}
 
 #pills-home-tab{
     background-color: none;

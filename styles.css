@@ -1,3 +1,5 @@
+
+
 .instagram-text{
 
     height: auto;
@@ -12,13 +14,13 @@
     margin-left: 10px;
 }
 
-
-#logout{
-    color:red;
-}
 .fa-camera, .fa-location-dot  {
     height:15px;
     width: 15px;
+}
+
+#logout{
+    color:red;
 }
 
 #pills-home-tab{
@@ -59,8 +61,7 @@
     min-height:50%;
     height: auto;
     position: relative;
-    aspect-ratio:4/5;
-    
+    aspect-ratio: 4/5;
     
 }
 
